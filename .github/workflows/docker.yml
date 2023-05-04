@@ -1,11 +1,11 @@
-name: mqn-cp-test
+name: php docker test
 
 on:
   workflow_dispatch:
 
 jobs:
   test:
-    runs-on: mqn-cp-test
+    runs-on: ubuntu-latest
     container: php:8
     steps:
       - run: php -i
